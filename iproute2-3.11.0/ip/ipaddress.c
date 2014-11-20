@@ -1423,7 +1423,7 @@ static int ipaddr_modify(int cmd, int flags, int argc, char **argv)
 	return 0;
 }
 
-int do_ipaddr(int argc, char **argv)
+int do_ipaddr(int argc, char **argv)//ip addr命令的处理入口：可执行ip addr help查看用法
 {
 	if (argc < 1)
 		return ipaddr_list_flush_or_save(0, NULL, IPADD_LIST);

@@ -416,7 +416,7 @@ static int iprule_flush(int argc, char **argv)
 	return 0;
 }
 
-int do_iprule(int argc, char **argv)
+int do_iprule(int argc, char **argv)//ip rule命令处理入口，可使用ip rule help查看命令帮助，ip rule list/show显示已添加的路由规则
 {
 	if (argc < 1) {
 		return iprule_list(0, NULL);

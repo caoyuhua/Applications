@@ -38,7 +38,7 @@ struct rtnl_handle rth = { .fd = -1 };
 
 static void usage(void) __attribute__((noreturn));
 
-static void usage(void)
+static void usage(void)//ip命令可组合ip addr，ip route等一系列命令
 {
 	fprintf(stderr,
 "Usage: ip [ OPTIONS ] OBJECT { COMMAND | help }\n"
@@ -152,7 +152,7 @@ static int batch(const char *name)
 }
 
 
-int main(int argc, char **argv)
+int main(int argc, char **argv)//ip命令的主进程
 {
 	char *basename;
 	char *batch_file = NULL;
