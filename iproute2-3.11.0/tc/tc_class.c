@@ -306,7 +306,7 @@ static int tc_class_list(int argc, char **argv)
 	return 0;
 }
 
-int do_class(int argc, char **argv)
+int do_class(int argc, char **argv)//tc class命令处理入口,可tc class help查看命令帮助。
 {
 	if (argc < 1)
 		return tc_class_list(0, NULL);

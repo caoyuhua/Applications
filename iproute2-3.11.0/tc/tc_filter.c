@@ -349,7 +349,7 @@ static int tc_filter_list(int argc, char **argv)
 	return 0;
 }
 
-int do_filter(int argc, char **argv)
+int do_filter(int argc, char **argv)//tc filter命令处理入口
 {
 	if (argc < 1)
 		return tc_filter_list(0, NULL);

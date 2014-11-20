@@ -180,7 +180,7 @@ noexist:
 	return q;
 }
 
-static void usage(void)
+static void usage(void)//tc命令：tc qdisc，tc class，tc filter等命令。
 {
 	fprintf(stderr, "Usage: tc [ OPTIONS ] OBJECT { COMMAND | help }\n"
 			"       tc [-force] -batch filename\n"
@@ -261,7 +261,7 @@ static int batch(const char *name)
 }
 
 
-int main(int argc, char **argv)
+int main(int argc, char **argv)//tc命令主进程
 {
 	int ret;
 	char *batch_file = NULL;
