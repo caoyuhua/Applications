@@ -1,0 +1,1 @@
+arm-linux-gcc -o main main.c -lsqlite3 -I /media/sqlite3/include -L /media/sqlite3/lib
