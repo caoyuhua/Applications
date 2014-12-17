@@ -1,0 +1,6 @@
+PC上编译应用：
+gcc -o test test.c -lsqlite3--->-lsqlite3表示引用sqlite3库(sqlite3库若不在/lib或/usr/lib下会出错，需如下方法指定库和头文件路径)
+
+
+arm单板，交叉编译应用：
+arm-linux-gcc -o test test.c -I /media/xx/sqlite3/include -L /media/xx/sqlite3/lib -lsqlite3

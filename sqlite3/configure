@@ -1306,7 +1306,7 @@ for ac_var in $ac_precious_vars; do
   eval ac_cv_env_${ac_var}_value=\$${ac_var}
 done
 
-#
+#./configure --help
 # Report the --help message.
 #
 if test "$ac_init_help" = "long"; then
@@ -1334,6 +1334,7 @@ Configuration:
       --srcdir=DIR        find the sources in DIR [configure dir or \`..']
 
 Installation directories:
+#--prefix交叉编译时用于指定sqlite3库及sqlite3命令的安装目录
   --prefix=PREFIX         install architecture-independent files in PREFIX
                           [$ac_default_prefix]
   --exec-prefix=EPREFIX   install architecture-dependent files in EPREFIX
@@ -1377,6 +1378,7 @@ Program names:
 
 System types:
   --build=BUILD     configure for building on BUILD [guessed]
+#--host交叉编译时指定目标机硬件平台
   --host=HOST       cross-compile to build programs to run on HOST [BUILD]
 _ACEOF
 fi

@@ -1,0 +1,11 @@
+配置：
+PC上直接./configure
+arm单板./configure --host=arm-linux --prefix=/media/test
+------------>配置完毕后在TopDir自动生成Makefile
+
+编译：
+make
+make install
+
+
+
