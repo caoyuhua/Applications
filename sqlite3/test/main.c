@@ -151,7 +151,10 @@ const char **pzTail
         sqlite3_finalize(pstmt);  
         break;  
     }  
-  
+//打开rar或音频视频等文件:FILE *fp=fopen("xx.rar","rb")
+//读取rar或音频视频等文件内容到一个大char型数组:char *ffile:fread(ffile,sizeof(char),filesize+1,fp)
+//将文件数据绑定:sqlite3_bind_blob（stat,1，ffile,filesize,NULL）
+//执行绑定之后的sql语句:sqlite3_step(stat) 
     sqlite3_close(pdb);    
     return 0;   
 }  
