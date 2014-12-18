@@ -1,0 +1,12 @@
+编译：
+./configure
+make
+make install
+
+
+使用：
+创建一块10G的虚拟机磁盘映像(即虚拟机文件系统):qemu-img create /f test.img 10G
+
+在虚拟机磁盘映像上安装操作系统：qemu-system-i386 -hda test.img -cdrom Ubuntu.iso -boot d
+
+运行磁盘映像上已安装好的操作系统：qemu-system-i386 -hda test.img
